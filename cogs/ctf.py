@@ -9,7 +9,7 @@ from time import time
 class CTF(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
-        self.header = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0'}
+        self.header = {'User-Agent': 'CyberBot'}
 
         self.fp = path.dirname(__file__)
         self.rp = 'data/teams.json'

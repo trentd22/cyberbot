@@ -1,6 +1,6 @@
 # CyberBot
 
-![Version 0.01](https://img.shields.io/badge/version-0.01-lightgrey)
+[![Version 0.01](https://img.shields.io/badge/version-0.01-green)](https://github.com/trentd22/cyberbot)
 [![Python 3.6](https://img.shields.io/badge/python-3.6%2B-blue)](https://www.python.org/downloads/)
 
 An open-source Discord bot designed for CTF and InfoSec enthusiasts, made using discord.py and the CTFTime API.

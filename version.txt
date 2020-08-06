@@ -1,0 +1,10 @@
+Version 0.01 - First Alpha Release
+----------------------------
+Main Features
+- Track upcoming CTF events and your team's stats
+- 75+ InfoSec/CS trivia questions, with plans to add hundreds more
+- Trivia leaderboard system
+- Admin commands (Kick/Ban/Unban)
+- Many more features to be added!
+
+More Info: https://github.com/trentd22/cyberbot

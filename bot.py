@@ -1,4 +1,4 @@
-MIT License
+'''MIT License
 
 Copyright (c) 2020 Trent D (trentd22)
 
@@ -18,4 +18,19 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+SOFTWARE.'''
+
+import discord
+import os
+from discord.ext import commands
+
+TOKEN = 'TOKEN'
+
+bot = commands.Bot(command_prefix='!')
+
+for file_name in os.listdir('./cogs'):
+    if file_name.endswith('.py'):
+        bot.load_extension(f'cogs.{file_name[:-3]}')
+
+
+bot.run(TOKEN)

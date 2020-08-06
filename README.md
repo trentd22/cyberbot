@@ -58,4 +58,4 @@ TOKEN = '1234abcd'
 CyberBot is licensed under the MIT license, which can be viewed under the "LICENSE" file.
 
 The discord.py API wrapper is authored by Rapptz and licensed under the MIT license. [You can view the repository here.](https://github.com/Rapptz/discord.py)
-
+The CTFTime API is used for event and team integration. [Link to CTFTime.](https://ctftime.org/)

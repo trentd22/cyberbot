@@ -21,7 +21,7 @@ Note: This is a very early build of the bot; if you have any issues or feedback 
 
 ### Adding the Bot to Your Server?
 
-Just simply use this link! (LINK HERE)
+Just simply [click here to add the bot to your discord!](https://discord.com/api/oauth2/authorize?client_id=741494474081042504&permissions=8&scope=bot)
 
 ### Wanting to Host your Own Instance?
 

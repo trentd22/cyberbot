@@ -10,11 +10,15 @@ class Task(commands.Cog):
     @tasks.loop(seconds=10.0)
     async def change_status(self):
         '''Changes bot status based on latency'''
-        response = round(self.bot.latency * 1000)
+        try:
+            response = round(self.bot.latency * 1000)
+        except OverflowError:
+            response = 251
+        
         if response > 250:
-            return await self.bot.change_presence(status=discord.Status.dnd, activity=discord.Game('Experiencing Latency'))
-       
-        await self.bot.change_presence(status=discord.Status.online, activity=discord.Game('Ready To Go - !help'))
+            await self.bot.change_presence(status=discord.Status.dnd, activity=discord.Game('Experiencing Latency'))
+        else:
+            await self.bot.change_presence(status=discord.Status.online, activity=discord.Game('Ready To Go - !help'))
     
     @change_status.before_loop
     async def change_status_before(self):

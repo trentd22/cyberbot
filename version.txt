@@ -1,5 +1,9 @@
-Version 0.01 - First Alpha Release
+Version 0.02 Alpha
 ----------------------------
+What's New?
+- Fixed bug with Cyberbot answering trivia questions
+- Fixed bug where the bot status would not return to "Ready to Go" after downtime
+
 Main Features
 - Track upcoming CTF events and your team's stats
 - 75+ InfoSec/CS trivia questions, with plans to add hundreds more

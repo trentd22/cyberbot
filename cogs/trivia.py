@@ -69,7 +69,7 @@ class Trivia(commands.Cog):
         Fill-in-the-blank: Simply type your answer in the chat, do not prepend any commands or extra text.'''
         def check_blank(m):
             #Checks if user message is an answer to trivia, and that it is the correct answer (case-insensitive)
-            return (m.channel == ctx.message.channel) and (x.lower() in m.content.strip().lower() for x in answers)
+            return (m.channel == ctx.message.channel) and (x.lower() in m.content.strip().lower() for x in answers) and (bot_message.author.id != m.author.id)
         
         def check_multi(reaction, user):
             #Checks if user reaction is equal to the reaction related to the correct answer
